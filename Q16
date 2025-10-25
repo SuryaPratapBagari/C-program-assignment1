@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){
+  int i,n;
+  unsigned long long factorial=1;
+
+  printf("Enter the number for the factorial: ");
+  scanf("%d", &n);
+
+  if(n>0){
+    for(i=n; i>0; i--){
+      factorial = factorial * i;
+    }
+    printf("The factorial of %d is %llu", n, factorial);
+  }
+  else{
+    printf("The number cannot be negative.");
+  }
+
+ 
+  return 0;
+}
